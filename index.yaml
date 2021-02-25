@@ -1,9 +1,21 @@
 apiVersion: v1
 entries:
+  gp-cluster-config-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-02-25T16:05:38.521312+01:00"
+    description: A gepaplexx Helm chart setup an Openshift-Cluster with gepaplexx
+      specific configs
+    digest: fc2766c787a86cae323140daae9d1a14246c570fcb54b1122f5c55a503b020e6
+    name: gp-cluster-config-chart
+    type: application
+    urls:
+    - gp-cluster-config-chart-1.0.0.tgz
+    version: 1.0.0
   gp-harbor-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-02-25T16:03:12.382614+01:00"
+    created: "2021-02-25T16:05:38.527555+01:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -18,7 +30,7 @@ entries:
   gp-quotas-and-nw-isolation-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-02-25T16:03:12.385008+01:00"
+    created: "2021-02-25T16:05:38.529034+01:00"
     description: A Helm chart which applies a template for new openshift projects.
       This template defines default network policies and resource quotas for every
       new project.
@@ -28,4 +40,4 @@ entries:
     urls:
     - gp-quotas-and-nw-isolation-chart-1.0.0.tgz
     version: 1.0.0
-generated: "2021-02-25T16:03:12.375777+01:00"
+generated: "2021-02-25T16:05:38.518295+01:00"
