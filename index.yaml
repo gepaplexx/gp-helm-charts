@@ -5,7 +5,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v1
     appVersion: v1.4.1
-    created: "2021-08-19T08:54:43.02375525Z"
+    created: "2021-08-19T13:50:11.003785+02:00"
     description: A Helm chart for cert-manager
     digest: 7ea945457786b5f62ff34e829c87887f845501882e165a6949f87fc9f87f6e04
     home: https://github.com/jetstack/cert-manager
@@ -22,12 +22,12 @@ entries:
     sources:
     - https://github.com/jetstack/cert-manager
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/cert-manager-v1.4.1.tgz
+    - cert-manager-v1.4.1.tgz
     version: v1.4.1
   gp-app:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-13T12:25:34.364021136Z"
+    created: "2021-08-19T13:50:11.009546+02:00"
     dependencies:
     - alias: gps2i
       condition: gps2i.enabled
@@ -39,20 +39,20 @@ entries:
     name: gp-app
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-app-1.0.2.tgz
+    - gp-app-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-12T15:48:16.659400863Z"
+    created: "2021-08-19T13:50:11.007375+02:00"
     description: BKE-App Helm Chart
     digest: 523734df41ed20a4d9bbd1c0b1e61645773c74a4e0f8b10bd86220b6a61193ee
     name: gp-app
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-app-1.0.1.tgz
+    - gp-app-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
-    created: "2021-07-12T06:48:48.139168131Z"
+    created: "2021-08-19T13:50:11.005575+02:00"
     description: BKE-App Helm Chart
     digest: 812e46a0d05e22d1bd57b2ba47f5031b19c037cfddfbdc1124e6cdbec88686b4
     keywords:
@@ -60,123 +60,134 @@ entries:
     - bke
     name: gp-app
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-app-1.0.0.tgz
+    - gp-app-1.0.0.tgz
     version: 1.0.0
+  gp-bke-s2i:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-08-19T13:50:11.011749+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 018652ac55ce345b7c107c98ef69098fd03cc9161fee43cb7729648a9b4b9077
+    name: gp-bke-s2i
+    type: application
+    urls:
+    - gp-bke-s2i-0.1.0.tgz
+    version: 0.1.0
   gp-cluster-config-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-08-19T08:54:16.314799021Z"
+    created: "2021-08-19T13:50:11.013181+02:00"
     description: A gepaplexx Helm chart setup an Openshift-Cluster with gepaplexx
       specific configs
     digest: bd645751177d97904c0967cf8cbeda40a4a2762d45b1e24fae69d5f2dccc7506
     name: gp-cluster-config-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-cluster-config-chart-1.0.0.tgz
+    - gp-cluster-config-chart-1.0.0.tgz
     version: 1.0.0
   gp-cluster-issuer-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-08-19T08:54:43.024265493Z"
+    created: "2021-08-19T13:50:11.014663+02:00"
     description: A Helm chart for Kubernetes
     digest: 315751949604658a4ec2255ac190236023b1c90487af6f0132f9d39d60809eeb
     name: gp-cluster-issuer-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-cluster-issuer-chart-0.1.0.tgz
+    - gp-cluster-issuer-chart-0.1.0.tgz
     version: 0.1.0
   gp-cluster-logging-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-19T08:54:25.322566376Z"
+    created: "2021-08-19T13:50:11.017525+02:00"
     description: A Helm chart for Kubernetes
     digest: 687a19394c3ee2c485112599bcf2e50dea5f3b8443d81a6d936ebf92ae077580
     name: gp-cluster-logging-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-cluster-logging-chart-1.1.0.tgz
+    - gp-cluster-logging-chart-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-28T10:48:25.954442768Z"
+    created: "2021-08-19T13:50:11.01619+02:00"
     description: A Helm chart for Kubernetes
     digest: e59c3b81abb4dfaa41d75b449d9ea1e7071acb28d5b1916b2bca0a101acbac01
     name: gp-cluster-logging-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-cluster-logging-chart-1.0.0.tgz
+    - gp-cluster-logging-chart-1.0.0.tgz
     version: 1.0.0
   gp-cluster-logging-operator-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-19T08:54:25.323110923Z"
+    created: "2021-08-19T13:50:11.018822+02:00"
     description: A Helm chart for Kubernetes
     digest: 67f68e75ed58e6b8011e793329444a7259308d04537cef2fc81c927880bf9473
     name: gp-cluster-logging-operator-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-cluster-logging-operator-chart-1.0.0.tgz
+    - gp-cluster-logging-operator-chart-1.0.0.tgz
     version: 1.0.0
   gp-cluster-updater-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-08-19T08:54:20.688303779Z"
+    created: "2021-08-19T13:50:11.020208+02:00"
     description: A Helm Chart to deploy a cron job which automatically updates the
       cluster.
     digest: 4fcbaee4dda534d1c92245244566a878933d3747722a26463b3ea5821380788a
     name: gp-cluster-updater-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-cluster-updater-chart-1.1.0.tgz
+    - gp-cluster-updater-chart-1.1.0.tgz
     version: 1.1.0
   gp-jaeger-tracing-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-19T08:54:37.850056047Z"
+    created: "2021-08-19T13:50:11.021904+02:00"
     description: A Helm chart for Kubernetes
     digest: 559a37bffc4638193f908209eccffe9779b22cc6d2f15e119d03b0c5db57fa4c
     name: gp-jaeger-tracing-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-jaeger-tracing-chart-1.0.0.tgz
+    - gp-jaeger-tracing-chart-1.0.0.tgz
     version: 1.0.0
   gp-java-s2i:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-13T12:25:34.364392461Z"
+    created: "2021-08-19T13:50:11.023158+02:00"
     description: A Helm chart for Kubernetes
     digest: aed4b26d27d39253be6366c31a9bb1d046b1c97ee5558c0e06c4b0c9856dbee4
     name: gp-java-s2i
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-java-s2i-0.1.0.tgz
+    - gp-java-s2i-0.1.0.tgz
     version: 0.1.0
   gp-monitoring-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-19T08:54:29.775736825Z"
+    created: "2021-08-19T13:50:11.024313+02:00"
     description: A Helm chart for Kubernetes
     digest: 1e0afcce7c9316d36589beb25b2d5149a60bafb73e306c4c5cb85a191cc5c78f
     name: gp-monitoring-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-monitoring-chart-1.0.0.tgz
+    - gp-monitoring-chart-1.0.0.tgz
     version: 1.0.0
   gp-prometheus-rules:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-19T08:54:29.778015819Z"
+    created: "2021-08-19T13:50:11.025461+02:00"
     description: A Helm chart for Kubernetes
     digest: 95f39c6fd3492d968b84aa6a1597e89116d71bca105974fb49541ff528ee0c20
     name: gp-prometheus-rules
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-prometheus-rules-1.0.0.tgz
+    - gp-prometheus-rules-1.0.0.tgz
     version: 1.0.0
   gp-quotas-and-nw-isolation-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-08-19T08:54:07.871103274Z"
+    created: "2021-08-19T13:50:11.02886+02:00"
     description: A Helm chart which applies a template for new openshift projects.
       This template defines default network policies and resource quotas for every
       new project.
@@ -184,11 +195,11 @@ entries:
     name: gp-quotas-and-nw-isolation-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-quotas-and-nw-isolation-chart-1.0.1.tgz
+    - gp-quotas-and-nw-isolation-chart-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-02T13:25:17.875752+02:00"
+    created: "2021-08-19T13:50:11.027652+02:00"
     description: A Helm chart which applies a template for new openshift projects.
       This template defines default network policies and resource quotas for every
       new project.
@@ -201,18 +212,18 @@ entries:
   gp-storage-cephcluster-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-08-19T08:54:33.802365789Z"
+    created: "2021-08-19T13:50:11.030639+02:00"
     description: A Helm chart for Kubernetes
     digest: 5c7cbedd18e42f5e3639c2848d8b7f721db2afda4836431853b053075752427f
     name: gp-storage-cephcluster-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-storage-cephcluster-chart-0.1.0.tgz
+    - gp-storage-cephcluster-chart-0.1.0.tgz
     version: 0.1.0
   gp-storage-provisioner-nfs-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-02T13:25:17.879293+02:00"
+    created: "2021-08-19T13:50:11.060702+02:00"
     description: A Helm chart to install the storage provisioner for NFS in Openshift‚
     digest: 717f02dc75c51a64a811a21bfb9c8c9893fe3f0d3b83b877287db1f7fd074bfb
     name: gp-storage-provisioner-nfs-chart
@@ -223,40 +234,40 @@ entries:
   gp-storage-rook-ceph-operator-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-08-19T08:54:33.80918177Z"
+    created: "2021-08-19T13:50:11.066307+02:00"
     description: A Helm chart for Kubernetes
     digest: fe9a7306af33c404508e2ac0a29a57b15bf1662d4fd6a81a77906f29d74b4e5e
     name: gp-storage-rook-ceph-operator-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-storage-rook-ceph-operator-chart-0.1.0.tgz
+    - gp-storage-rook-ceph-operator-chart-0.1.0.tgz
     version: 0.1.0
   gp-updater-cronjob-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-19T08:54:20.688701612Z"
+    created: "2021-08-19T13:50:11.068118+02:00"
     description: A Helm chart for Kubernetes
     digest: 5c234a93b637f9791e5694474a048cd09ee38cbf8833204d5f294cd6b9cbb675
     name: gp-updater-cronjob-chart
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/gp-updater-cronjob-chart-1.1.0.tgz
+    - gp-updater-cronjob-chart-1.1.0.tgz
     version: 1.1.0
   oauth-group-sync-operator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-08-11T06:59:26.460235527Z"
+    created: "2021-08-19T13:50:11.069711+02:00"
     description: A Helm chart for Kubernetes
     digest: e8ebd0ff883aa627554ea7fc8f9d0e5316a3cd3ce2888f692fb3d1cc819c1514
     name: oauth-group-sync-operator
     type: application
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/oauth-group-sync-operator-0.1.0.tgz
+    - oauth-group-sync-operator-0.1.0.tgz
     version: 0.1.0
   velero:
   - apiVersion: v2
     appVersion: 1.6.1
-    created: "2021-08-19T08:54:11.884196792Z"
+    created: "2021-08-19T13:50:11.073218+02:00"
     description: A Helm chart for velero
     digest: 0c58cd2c265fcd9474a867dc6e950018bd43fc6ec88560c6c70c0077307b0eeb
     home: https://github.com/vmware-tanzu/velero
@@ -274,6 +285,6 @@ entries:
     sources:
     - https://github.com/vmware-tanzu/velero
     urls:
-    - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
+    - velero-2.23.3.tgz
     version: 2.23.3
-generated: "2021-08-19T08:54:42.996760247Z"
+generated: "2021-08-19T13:50:10.99246+02:00"
