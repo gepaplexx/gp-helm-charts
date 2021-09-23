@@ -27,7 +27,7 @@ entries:
   gp-app:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-21T10:20:55.177553295Z"
+    created: "2021-09-23T11:01:09.196998529Z"
     dependencies:
     - alias: gps2i
       condition: gps2i.enabled
@@ -35,7 +35,7 @@ entries:
       repository: https://gepaplexx.github.io/gp-helm-charts/
       version: 0.1.0
     description: BKE-App Helm Chart
-    digest: b531c51ce444d3fa61647bfee98eecca2d6d977b77bc8ae97afc93c35ba1f55f
+    digest: a54954801155a47e7cf538804b97333c83efc4ed9d9e0c5d2fbbf3cda0da80f6
     name: gp-app
     type: application
     urls:
@@ -62,12 +62,23 @@ entries:
     urls:
     - gp-app-1.0.0.tgz
     version: 1.0.0
+  gp-bke-deploy-db:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-09-23T11:01:09.197398234Z"
+    description: A Helm chart for Kubernetes
+    digest: 7080ecc96094702233b63b5ee82ddd3776b97ba907d650dbf71f1719661fcaf3
+    name: gp-bke-deploy-db
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-bke-deploy-db-0.1.0.tgz
+    version: 0.1.0
   gp-bke-mvn-tekton:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-09-21T10:20:55.177958921Z"
+    created: "2021-09-23T11:01:09.197779839Z"
     description: A Helm chart for Kubernetes
-    digest: 11b818478c6d9924be4a6e52f82446e01f91036cb35e4b5736014e8c5f831e36
+    digest: b16d2f85636f3b2089d83fcdb3078e1ec6342fdfd42f865f2261b01e6922779b
     name: gp-bke-mvn-tekton
     type: application
     urls:
@@ -76,9 +87,9 @@ entries:
   gp-bke-s2i:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-21T10:20:55.178573361Z"
+    created: "2021-09-23T11:01:09.198173844Z"
     description: A Helm chart for Kubernetes
-    digest: b73f85e6f5168c176374b436e74d173412943c864fb0b90411b94d93d0adf8de
+    digest: a5cfae15926646b94cff77207a6f091f9eb9a8f8697adf1e6217fd3fcef85aad
     name: gp-bke-s2i
     type: application
     urls:
@@ -87,9 +98,9 @@ entries:
   gp-bke-s2i-tekton:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-09-21T10:20:55.17887118Z"
+    created: "2021-09-23T11:01:09.198516249Z"
     description: A Helm chart for Kubernetes
-    digest: 5922ace6bbc5a2bddd9b3e6bb881edfbc77c8465022f4259f1a7e4f0cc4cd7df
+    digest: 6742ce40c70d7350c010e81fe7d649558860a1866ea21f0a30e0940d4d11be62
     name: gp-bke-s2i-tekton
     type: application
     urls:
@@ -320,4 +331,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2021-09-21T10:20:55.175735277Z"
+generated: "2021-09-23T11:01:09.195459108Z"
