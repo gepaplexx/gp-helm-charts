@@ -151,12 +151,28 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/gp-bke-mvn-tekton-0.1.0.tgz
     version: 0.1.0
+  gp-bke-runtime-database-postgresql:
+  - apiVersion: v2
+    appVersion: 14.1.0
+    created: "2022-03-01T15:15:29.954822348Z"
+    dependencies:
+    - alias: db
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.3
+    description: A Helm chart to provide a PostgreSQL databse
+    digest: 7b32e473ae81a50bcd8f1a6d076ce269d99ca21de2b2fe9b44b208861b8a37e2
+    name: gp-bke-runtime-database-postgresql
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-bke-runtime-database-postgresql-0.1.0.tgz
+    version: 0.1.0
   gp-bke-runtime-minimal-application:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-03-01T11:59:27.608754873Z"
+    created: "2022-03-01T15:15:29.955309786Z"
     description: A minimal Helm chart for deploying self-contained images to OpenShift
-    digest: dee6914fb0e4b3638161227d5f615ff6057ea5046346229ac6b66a89a39d4a65
+    digest: eae16295ef2f63f476929d3381d00d5cdc2177af717dc971aca85c3e8c54d32a
     name: gp-bke-runtime-minimal-application
     type: application
     urls:
@@ -1218,4 +1234,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-03-01T11:59:41.397384954Z"
+generated: "2022-03-01T15:15:29.946357Z"
