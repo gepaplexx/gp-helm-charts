@@ -24,6 +24,17 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/cert-manager-v1.4.1.tgz
     version: v1.4.1
+  gepaplexx-cicd-eventbus:
+  - apiVersion: v2
+    created: "2022-04-21T12:40:46.246485446Z"
+    description: A helm chart for installing required roles and rolebindings and infrastructure
+      such as an eventbus for bootstrapping of an cicd instance
+    digest: 588a9ee0149a30495acbe44a401401b43ca052e033164e199a427df4000c3d37
+    name: gepaplexx-cicd-eventbus
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gepaplexx-cicd-eventbus-0.1.0.tgz
+    version: 0.1.0
   gp-app:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -508,6 +519,33 @@ entries:
     type: application
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/gp-certificates-patches-0.1.0.tgz
+    version: 0.1.0
+  gp-cicd-tools:
+  - apiVersion: v2
+    created: "2022-04-21T12:40:46.262992767Z"
+    dependencies:
+    - alias: argo_workflows
+      condition: argo-workflows.enabled
+      name: argo-workflows
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.1.6
+    - alias: argo_events
+      condition: argo-events.enabled
+      name: argo-events
+      repository: https://argoproj.github.io/argo-helm
+      version: 1.12.0
+    - alias: argo_rollouts
+      condition: argo_rollouts.enabled
+      name: argo-rollouts
+      repository: https://argoproj.github.io/argo-helm
+      version: 2.12.0
+    description: A Helm chart for deploying argo infrastructure including workflow,
+      events, rollout and an argocd instance
+    digest: 7bcb77a218b8f474231ea4928003b1b86eb2a944a63b11181dc046933fc1050a
+    name: gp-cicd-tools
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-cicd-tools-0.1.0.tgz
     version: 0.1.0
   gp-cluster-config:
   - apiVersion: v2
@@ -1669,4 +1707,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-04-21T12:40:33.650892343Z"
+generated: "2022-04-21T12:40:46.245925741Z"
