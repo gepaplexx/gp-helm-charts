@@ -26,10 +26,10 @@ entries:
     version: v1.4.1
   gepaplexx-cicd-eventbus:
   - apiVersion: v2
-    created: "2022-04-21T13:49:47.916185484Z"
+    created: "2022-04-21T13:55:30.034646647Z"
     description: A helm chart for installing required roles and rolebindings and infrastructure
       such as an eventbus for bootstrapping of an cicd instance
-    digest: a8b1d136460d5ad48392d604f6f2edd717699fcf2853a1967ae2cb9d5c503a33
+    digest: 95a99582646d3fde46db667f4c243221cc976ae828fd91439b69992247d855d0
     name: gepaplexx-cicd-eventbus
     type: application
     urls:
@@ -522,6 +522,22 @@ entries:
     version: 0.1.0
   gp-cicd-argo-events:
   - apiVersion: v2
+    created: "2022-04-21T13:55:30.037320163Z"
+    dependencies:
+    - alias: argo_events
+      condition: argo-events.enabled
+      name: argo-events
+      repository: https://argoproj.github.io/argo-helm
+      version: 1.12.0
+    description: A helm chart for argo-events. Required due to argo-events and argo-workflows
+      helm chart containing the same CRDs
+    digest: 6d15c6e49a75f499202357b93cdd1db451a2b79d8738b4e6018249346582f686
+    name: gp-cicd-argo-events
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-cicd-argo-events-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     created: "2022-04-21T13:49:47.917302089Z"
     dependencies:
     - alias: argo_events
@@ -555,7 +571,7 @@ entries:
     version: 0.1.0
   gp-cicd-tools:
   - apiVersion: v2
-    created: "2022-04-21T13:49:47.934087063Z"
+    created: "2022-04-21T13:55:30.05287356Z"
     dependencies:
     - alias: argo_workflows
       condition: argo-workflows.enabled
@@ -569,7 +585,7 @@ entries:
       version: 2.12.0
     description: A Helm chart for deploying argo infrastructure including workflow,
       rollout and an argocd instance
-    digest: eab734617d84d1579ce839347b99cd852d6ac26f6abcff78c81729dfa7cc4b51
+    digest: 07e03a1224be745a31b3e34b7b805cfc60894f35f2022b839471bfa11597501a
     name: gp-cicd-tools
     type: application
     urls:
@@ -1761,4 +1777,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-04-21T13:55:15.717666253Z"
+generated: "2022-04-21T13:55:30.034197444Z"
