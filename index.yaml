@@ -26,10 +26,10 @@ entries:
     version: v1.4.1
   gepaplexx-cicd-eventbus:
   - apiVersion: v2
-    created: "2022-05-04T13:39:24.758696422Z"
+    created: "2022-05-05T11:02:27.841476254Z"
     description: A helm chart for installing required roles and rolebindings and infrastructure
       such as an eventbus for bootstrapping of an cicd instance
-    digest: 8e36f19303d1746ea4e334b377d54f0c655ec9550caf040157c41810fa634f98
+    digest: 2b1e85c901725e6a2aa81b14fea447415d7ecaf0d1dc24a438858a9a211c2158
     name: gepaplexx-cicd-eventbus
     type: application
     urls:
@@ -542,7 +542,7 @@ entries:
     version: 0.1.0
   gp-cicd-argo-events:
   - apiVersion: v2
-    created: "2022-05-04T13:39:24.760421725Z"
+    created: "2022-05-05T11:02:27.843248955Z"
     dependencies:
     - alias: argo_events
       condition: argo-events.enabled
@@ -551,7 +551,7 @@ entries:
       version: 1.12.0
     description: A helm chart for argo-events. Required due to argo-events and argo-workflows
       helm chart containing the same CRDs
-    digest: 9ff2556682a9c5ac927e06339c8d9387af2843207129e2fdd56ab87588eab1d1
+    digest: d80b862b923269d38d79715f0ade01318a34903a3e6c5b72515a06c12eb9345b
     name: gp-cicd-argo-events
     type: application
     urls:
@@ -591,7 +591,7 @@ entries:
     version: 0.1.0
   gp-cicd-tools:
   - apiVersion: v2
-    created: "2022-05-04T13:39:24.777537255Z"
+    created: "2022-05-05T11:02:27.862002531Z"
     dependencies:
     - alias: argo_workflows
       condition: argo-workflows.enabled
@@ -605,7 +605,7 @@ entries:
       version: 2.12.0
     description: A Helm chart for deploying argo infrastructure including workflow,
       rollout and an argocd instance
-    digest: 66377d10e4687c45b1cbd44353be58adedb6376f4f9780661e16d7a93006b1ea
+    digest: e166e00fbde3578efc93f208ae88a5f8b47ab3561a0db2a30ee7b6198a64621f
     name: gp-cicd-tools
     type: application
     urls:
@@ -1997,4 +1997,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-05-05T11:02:10.576050384Z"
+generated: "2022-05-05T11:02:27.840815816Z"
