@@ -26,6 +26,16 @@ entries:
     version: v1.4.1
   gepaplexx-cicd-eventbus:
   - apiVersion: v2
+    created: "2022-07-15T05:06:17.225741141Z"
+    description: A helm chart for installing required roles and rolebindings and infrastructure
+      such as an eventbus for bootstrapping of an cicd instance
+    digest: f24e338847931caaf05cf6a6926fe2cb4d8dfb1e891174b7f87646b55613c8e3
+    name: gepaplexx-cicd-eventbus
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gepaplexx-cicd-eventbus-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     created: "2022-07-13T11:45:18.91392697Z"
     description: A helm chart for installing required roles and rolebindings and infrastructure
       such as an eventbus for bootstrapping of an cicd instance
@@ -584,14 +594,14 @@ entries:
   gp-cicd-apache:
   - apiVersion: v2
     appVersion: 2.4.53
-    created: "2022-07-13T11:45:18.91803602Z"
+    created: "2022-07-15T05:06:17.229254357Z"
     dependencies:
     - name: apache
       repository: https://charts.bitnami.com/bitnami
       version: 9.0.18
     description: A Helm chart for deploying an apache web server to publish junit
       test results
-    digest: d84a1861d74ea41089a313392e84901fa4db7edd2d9c493cebc2313773875367
+    digest: da802de0bc393549c05942cf6d16944172bdeeb68b1005951dc00f06e1673033
     name: gp-cicd-apache
     type: application
     urls:
@@ -649,7 +659,7 @@ entries:
   gp-cicd-nexus:
   - apiVersion: v2
     appVersion: 3.38.1
-    created: "2022-07-13T11:45:18.919398137Z"
+    created: "2022-07-15T05:06:17.230617163Z"
     dependencies:
     - alias: nexus
       name: nexus-repository-manager
@@ -657,7 +667,7 @@ entries:
       version: 38.1.1
     description: A Helm chart for deploying Sonartype Nexus on OpenShift using the
       certified operator
-    digest: 00cb94b28311c8987a6d40fcaf1dd1f0e05b56c0bde22aea04c32bfe718fc7b3
+    digest: d124f895919a0cc64c856f158ecdd0c8a7dfcb884dabb1066ca75ae56bd404bf
     name: gp-cicd-nexus
     type: application
     urls:
@@ -666,19 +676,49 @@ entries:
   gp-cicd-sonarqube:
   - apiVersion: v2
     appVersion: 9.4.0
-    created: "2022-07-13T11:45:18.927932341Z"
+    created: "2022-07-15T05:06:17.239541703Z"
     dependencies:
     - name: sonarqube
       repository: https://charts.bitnami.com/bitnami
       version: 1.0.13
     description: A Helm chart for deploying SonarQube Nexus for static code analysis.
-    digest: 470095f5aa91a4c44c136ce8310d0c2e9736b1d0876ea9bb4e1d4540152c986f
+    digest: 584955238901ac30c02ab11749aaeaa10246c2e706a2c8b7f4bc8952d16ac245
     name: gp-cicd-sonarqube
     type: application
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/gp-cicd-sonarqube-0.0.6.tgz
     version: 0.0.6
   gp-cicd-tools:
+  - apiVersion: v2
+    created: "2022-07-15T05:06:17.252086359Z"
+    dependencies:
+    - alias: argo_events
+      condition: argo-events.enabled
+      name: argo-events
+      repository: https://argoproj.github.io/argo-helm
+      version: ~2.0.2
+    - alias: argo_workflows
+      condition: argo-workflows.enabled
+      name: argo-workflows
+      repository: https://argoproj.github.io/argo-helm
+      version: ~0.16.6
+    - alias: argo_rollouts
+      condition: argo_rollouts.enabled
+      name: argo-rollouts
+      repository: https://argoproj.github.io/argo-helm
+      version: ~2.17.0
+    - condition: argo_workflows.persistence.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~11.6.14
+    description: A Helm chart for deploying argo infrastructure including workflow,
+      rollout, events and an argocd instance
+    digest: 891b60c86cf26a2dcd99811049a626f2bca748e85cec227e4f67cc472d269a25
+    name: gp-cicd-tools
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-cicd-tools-0.4.1.tgz
+    version: 0.4.1
   - apiVersion: v2
     created: "2022-07-13T11:45:18.939698484Z"
     dependencies:
@@ -2573,4 +2613,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-07-15T05:05:56.926885591Z"
+generated: "2022-07-15T05:06:17.225131038Z"
