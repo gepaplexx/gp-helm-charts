@@ -260,14 +260,14 @@ entries:
   gp-bke-runtime-database-mysql:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-07-29T09:08:29.691420801Z"
+    created: "2022-07-29T09:19:29.133543186Z"
     dependencies:
     - alias: db
       name: mysql
       repository: https://charts.bitnami.com/bitnami
       version: 8.8.26
     description: A Helm chart to provide a MySQL databse
-    digest: 396c82c7b121bf15190cfeed0f9a65a2eee867fc3e57aedb2960eba447e21a2e
+    digest: 9da3a231b2146748bc8623d39e14f91f29caa6ec80e549c4c635a8b25d2d7f57
     name: gp-bke-runtime-database-mysql
     type: application
     urls:
@@ -291,20 +291,30 @@ entries:
   gp-bke-runtime-database-postgresql:
   - apiVersion: v2
     appVersion: 14.1.0
-    created: "2022-07-29T09:08:29.695325841Z"
+    created: "2022-07-29T09:19:29.137959114Z"
     dependencies:
     - alias: db
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.0.3
     description: A Helm chart to provide a PostgreSQL databse
-    digest: 2b19b18e31615282447699796a110f0382ca96713e791e4b6645b9a0ce4b3852
+    digest: e53cb9f593b1615b9861de4f5ff61a1625ceb8b6297ff645c2fcf9c0226b6672
     name: gp-bke-runtime-database-postgresql
     type: application
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/gp-bke-runtime-database-postgresql-0.1.0.tgz
     version: 0.1.0
   gp-bke-runtime-minimal-application:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-07-29T09:19:29.138973644Z"
+    description: A minimal Helm chart for deploying self-contained images to OpenShift
+    digest: ed0e0928134bdcfb48ff1fe536a14ff0f6b349f273a27eba2d17a34f026b01e0
+    name: gp-bke-runtime-minimal-application
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-bke-runtime-minimal-application-0.1.18.tgz
+    version: 0.1.18
   - apiVersion: v2
     appVersion: 0.0.1
     created: "2022-07-29T09:08:29.695767545Z"
@@ -2829,4 +2839,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-07-29T09:09:09.744783827Z"
+generated: "2022-07-29T09:19:29.129160158Z"
