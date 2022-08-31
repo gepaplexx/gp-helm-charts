@@ -26,10 +26,10 @@ entries:
     version: v1.4.1
   gepaplexx-cicd-eventbus:
   - apiVersion: v2
-    created: "2022-08-31T11:10:26.797835991Z"
+    created: "2022-08-31T16:05:24.839422209Z"
     description: A helm chart for installing required roles and rolebindings and infrastructure
       such as an eventbus for bootstrapping of an cicd instance
-    digest: 27cc0103b1cac83046270684e13adfe89c1dbb6cbdf585cb303b7b38ad374bc5
+    digest: 8cd021e4dbb005813a61753b584e49aaf28421f669fb7be9301c2541f90556b6
     name: gepaplexx-cicd-eventbus
     type: application
     urls:
@@ -644,6 +644,21 @@ entries:
   gp-cicd-apache:
   - apiVersion: v2
     appVersion: 2.4.53
+    created: "2022-08-31T16:05:24.84491153Z"
+    dependencies:
+    - name: apache
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.0.18
+    description: A Helm chart for deploying an apache web server to publish junit
+      test results
+    digest: 78fa1809ca72d8c0c42eab544824917830ccd04adb71097f3791413201ec1ac8
+    name: gp-cicd-apache
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-cicd-apache-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 2.4.53
     created: "2022-08-31T11:10:26.801391899Z"
     dependencies:
     - name: apache
@@ -784,7 +799,7 @@ entries:
   gp-cicd-nexus:
   - apiVersion: v2
     appVersion: 3.38.1
-    created: "2022-08-31T11:10:26.802719602Z"
+    created: "2022-08-31T16:05:24.846503936Z"
     dependencies:
     - alias: nexus
       name: nexus-repository-manager
@@ -792,7 +807,7 @@ entries:
       version: 38.1.1
     description: A Helm chart for deploying Sonartype Nexus on OpenShift using the
       certified operator
-    digest: 6ee891c46b721adbff6e3a1d4cf9a59a65ab4ad6c673f6775b67d17a1af987de
+    digest: 0603d3a3886a63692e5ed0ca76d921930e8fd32621133a91bab0274bbed4f5ea
     name: gp-cicd-nexus
     type: application
     urls:
@@ -801,13 +816,13 @@ entries:
   gp-cicd-sonarqube:
   - apiVersion: v2
     appVersion: 9.4.0
-    created: "2022-08-31T11:10:26.811948423Z"
+    created: "2022-08-31T16:05:24.858787983Z"
     dependencies:
     - name: sonarqube
       repository: https://charts.bitnami.com/bitnami
       version: 1.0.14
     description: A Helm chart for deploying SonarQube Nexus for static code analysis.
-    digest: ddc866b5c326ce03f4c5cf7f901376f80b4211705ea3ff8b0e09dc0ad3eaa394
+    digest: 2e0943adb6601101094fd0d17f1d71a4ca80889628860823df9b9be8e89effc9
     name: gp-cicd-sonarqube
     type: application
     urls:
@@ -885,7 +900,7 @@ entries:
     version: 0.0.6
   gp-cicd-tools:
   - apiVersion: v2
-    created: "2022-08-31T11:10:26.82407125Z"
+    created: "2022-08-31T16:05:24.878289257Z"
     dependencies:
     - alias: argo_events
       condition: argo-events.enabled
@@ -908,7 +923,7 @@ entries:
       version: ~11.6.14
     description: A Helm chart for deploying argo infrastructure including workflow,
       rollout, events and an argocd instance
-    digest: 89773e599fa8c8071b8db097d7950320636789e6361cff1964f58cbc72cdc03a
+    digest: 12bc774041bea197154c145a40666b1be7b6b536ff9dd4418548501d3b3fe5d8
     name: gp-cicd-tools
     type: application
     urls:
@@ -3342,4 +3357,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-08-31T16:04:55.946425932Z"
+generated: "2022-08-31T16:05:24.838167704Z"
