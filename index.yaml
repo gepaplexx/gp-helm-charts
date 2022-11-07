@@ -26,6 +26,16 @@ entries:
     version: v1.4.1
   gepaplexx-cicd-eventbus:
   - apiVersion: v2
+    created: "2022-11-07T11:08:44.643061959Z"
+    description: A helm chart for installing required roles and rolebindings and infrastructure
+      such as an eventbus for bootstrapping of an cicd instance
+    digest: c612d4f15180e344244a5f0c113d2771bc91aa0313f7f26804e152bea4d93446
+    name: gepaplexx-cicd-eventbus
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gepaplexx-cicd-eventbus-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
     created: "2022-11-07T10:21:58.534956722Z"
     description: A helm chart for installing required roles and rolebindings and infrastructure
       such as an eventbus for bootstrapping of an cicd instance
@@ -664,14 +674,14 @@ entries:
   gp-cicd-apache:
   - apiVersion: v2
     appVersion: 2.4.53
-    created: "2022-11-07T10:21:58.538722859Z"
+    created: "2022-11-07T11:08:44.646210832Z"
     dependencies:
     - name: apache
       repository: https://charts.bitnami.com/bitnami
       version: 9.0.18
     description: A Helm chart for deploying an apache web server to publish junit
       test results
-    digest: 9acf90460aafec94acf6e069f2d69a4f3b1b7c858527fa1d3237a99fbdc802b9
+    digest: 09c1955a703b8da93729affb35ef1fde03b508b63760afcbbfedcf56399af70b
     name: gp-cicd-apache
     type: application
     urls:
@@ -834,7 +844,7 @@ entries:
   gp-cicd-nexus:
   - apiVersion: v2
     appVersion: 3.38.1
-    created: "2022-11-07T10:21:58.540405265Z"
+    created: "2022-11-07T11:08:44.64751262Z"
     dependencies:
     - alias: nexus
       name: nexus-repository-manager
@@ -842,7 +852,7 @@ entries:
       version: 38.1.1
     description: A Helm chart for deploying Sonartype Nexus on OpenShift using the
       certified operator
-    digest: 0de526fbc271283ce852bcec11065f9e254a54df0c9129a55c7c58f4662b46a5
+    digest: c622aed8f43fd2ee69afa02ef264d747d01bf6844f4ddf504351e0b0b1d28c03
     name: gp-cicd-nexus
     type: application
     urls:
@@ -851,13 +861,13 @@ entries:
   gp-cicd-sonarqube:
   - apiVersion: v2
     appVersion: 9.4.0
-    created: "2022-11-07T10:21:58.551816384Z"
+    created: "2022-11-07T11:08:44.655788248Z"
     dependencies:
     - name: sonarqube
       repository: https://charts.bitnami.com/bitnami
       version: 1.0.14
     description: A Helm chart for deploying SonarQube Nexus for static code analysis.
-    digest: ee694f8a97a5e7bd126dedc0ba0c4a24acaa3464345be37297a8ec2792494077
+    digest: 496270d6f2cec14f79782be70cde14cbebc015de19ba0c5015373dfbc6ce9228
     name: gp-cicd-sonarqube
     type: application
     urls:
@@ -962,6 +972,35 @@ entries:
     - https://gepaplexx.github.io/gp-helm-charts/gp-cicd-sonarqube-0.0.6.tgz
     version: 0.0.6
   gp-cicd-tools:
+  - apiVersion: v2
+    created: "2022-11-07T11:08:44.666273057Z"
+    dependencies:
+    - alias: argo_events
+      condition: argo_events.enabled
+      name: argo-events
+      repository: https://argoproj.github.io/argo-helm
+      version: ~2.0.6
+    - alias: argo_workflows
+      condition: argo_workflows.enabled
+      name: argo-workflows
+      repository: https://argoproj.github.io/argo-helm
+      version: ~0.20.1
+    - condition: argo_workflows.persistence
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~11.6.14
+    - condition: argo_workflows.archive.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: 8.0.10
+    description: A Helm chart for deploying argo infrastructure including workflow,
+      rollout, events and an argocd instance
+    digest: e17d08d2ebbbcda16b468c72cd0d568f716e735e2c3186b5373234c8ae158299
+    name: gp-cicd-tools
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-cicd-tools-0.6.25.tgz
+    version: 0.6.25
   - apiVersion: v2
     created: "2022-11-07T10:21:58.56412546Z"
     dependencies:
@@ -4403,4 +4442,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-11-07T11:08:22.487052Z"
+generated: "2022-11-07T11:08:44.642611563Z"
