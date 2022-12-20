@@ -329,6 +329,21 @@ entries:
     version: 0.1.0
   gp-bke-runtime-database-mysql:
   - apiVersion: v2
+    appVersion: 8.0.31
+    created: "2022-12-20T12:29:38.032935772Z"
+    dependencies:
+    - alias: db
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.4.5
+    description: A Helm chart to provide a MySQL databse
+    digest: 2dab78f38946e847c625a9c754d9dcc4161f89613171975b3a31638fa366064a
+    name: gp-bke-runtime-database-mysql
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-bke-runtime-database-mysql-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.0.1
     created: "2022-12-16T11:58:08.928100435Z"
     dependencies:
@@ -360,6 +375,21 @@ entries:
     version: 0.1.0
   gp-bke-runtime-database-postgresql:
   - apiVersion: v2
+    appVersion: 15.1.0
+    created: "2022-12-20T12:29:38.040102031Z"
+    dependencies:
+    - alias: db
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.5
+    description: A Helm chart to provide a PostgreSQL databse
+    digest: 0b1ec33974b0d8001d40d0bb88cfabc4ea76690d34c89d4f01d27d6948679fe1
+    name: gp-bke-runtime-database-postgresql
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-bke-runtime-database-postgresql-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 14.1.0
     created: "2022-12-16T11:58:08.933058505Z"
     dependencies:
@@ -377,9 +407,9 @@ entries:
   gp-bke-runtime-minimal-application:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-12-16T11:58:08.933542902Z"
+    created: "2022-12-20T12:29:38.040636535Z"
     description: A minimal Helm chart for deploying self-contained images to OpenShift
-    digest: 25b8638094caaed42d0c435670991d469a7121dc4bc62a4d9cd4b479052627c7
+    digest: f8963a8248b6b8281bc7f197de0830d3331ccaba8928d559ab8806cbc0be2af6
     name: gp-bke-runtime-minimal-application
     type: application
     urls:
@@ -4994,4 +5024,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2022-12-16T11:59:22.622467358Z"
+generated: "2022-12-20T12:29:38.028219633Z"
