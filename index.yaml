@@ -127,9 +127,9 @@ entries:
     version: 0.1.0
   gp-alertmanager:
   - apiVersion: v2
-    created: "2023-05-31T08:07:07.757126795Z"
+    created: "2023-05-31T08:27:45.943901351Z"
     description: A Helm chart for deploying external secrets used by the alertmanager
-    digest: 813c895be767c9745ee0d081d64af52bdb19eaeeeb7bdc76d71b39f36d82c414
+    digest: f6259e61df81e506f1ce847312343848193dbbec9b71baa826ff44ec372c724a
     name: gp-alertmanager
     type: application
     urls:
@@ -326,9 +326,9 @@ entries:
   gp-bke-argocd-application:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-31T08:07:07.757587593Z"
+    created: "2023-05-31T08:27:45.944245656Z"
     description: A Helm chart to deploy an ArgoCD-Application
-    digest: 01c5e8da2512fd97a837b8393822a732f54f887947182cbe62d162f8df50079e
+    digest: e69a606af75ce5b800ea074e848120de5bdaa3fce50d04261fc6dcd3d53b0430
     name: gp-bke-argocd-application
     type: application
     urls:
@@ -3042,10 +3042,10 @@ entries:
   gp-cluster-config:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-31T08:07:07.75855929Z"
+    created: "2023-05-31T08:27:45.944973167Z"
     description: A gepaplexx Helm chart setup an Openshift-Cluster with gepaplexx
       specific configs
-    digest: 29b850524e3bbd5b2b53c3db3e7b778e7d3eebd0621bcfbcae18da54701b84b6
+    digest: 0c644172b33dd039c9f3fc11dc6d6c25182016f1e4dd6ec96fc5c32711b095d4
     name: gp-cluster-config
     type: application
     urls:
@@ -4402,10 +4402,10 @@ entries:
     version: 0.1.0
   gp-external-secrets-configuration:
   - apiVersion: v2
-    created: "2023-05-31T08:07:07.759201288Z"
+    created: "2023-05-31T08:27:45.94522957Z"
     description: A Helm chart for Kubernetes containing configuration for the External
       Secrets Operator
-    digest: e397bd39b422f6e553814c8c7a465c9d15a57639ea2b5a23c1475cd3fbeda485
+    digest: 63cbff63804c3ed6e404f0e8d59b336fd81119874b40586e7779f72ff54f3c93
     name: gp-external-secrets-configuration
     type: application
     urls:
@@ -4463,10 +4463,10 @@ entries:
     version: 0.1.0
   gp-external-secrets-operator:
   - apiVersion: v2
-    created: "2023-05-31T08:07:07.759446387Z"
+    created: "2023-05-31T08:27:45.945497174Z"
     description: A Helm chart for installing External Secrets Operator on OpenShift
       https://github.com/external-secrets/external-secrets/
-    digest: d21651d7ea16ca3de5efff9d4239c3b5d1f75cb52cbf39c18854651794d5a831
+    digest: 138a56375820d32b11b9ab71c9d965de83e186553686ce0b15a2604522d43563
     name: gp-external-secrets-operator
     type: application
     urls:
@@ -4534,6 +4534,15 @@ entries:
     - https://gepaplexx.github.io/gp-helm-charts/gp-gp-pull-through-cache-registry-1.0.0.tgz
     version: 1.0.0
   gp-grafana-instance:
+  - apiVersion: v2
+    created: "2023-05-31T08:27:45.945919981Z"
+    description: A Helm chart for deploying Grafana on OpenShift
+    digest: 12598be9c51ea53c4ed959179b2eb330309a2095b41b7621b170f2287a9928a7
+    name: gp-grafana-instance
+    type: application
+    urls:
+    - https://gepaplexx.github.io/gp-helm-charts/gp-grafana-instance-0.4.1.tgz
+    version: 0.4.1
   - apiVersion: v2
     created: "2023-05-31T08:07:07.759846086Z"
     description: A Helm chart for deploying Grafana on OpenShift
@@ -4725,9 +4734,9 @@ entries:
     version: 0.0.1
   gp-grafana-operator:
   - apiVersion: v2
-    created: "2023-05-31T08:07:07.760058585Z"
+    created: "2023-05-31T08:27:45.946129284Z"
     description: A Helm chart for installing Grafana operator on OpenShift https://github.com/grafana-operator/grafana-operator
-    digest: b8de93f244c91a8ece2eeb7aeae637901599e73a837731f800120936284fe9e7
+    digest: 3532c1fa0e1f514279c954488fb0be5bc2f167e5550c6b47a432b835b9255600
     name: gp-grafana-operator
     type: application
     urls:
@@ -4753,13 +4762,13 @@ entries:
     version: 0.0.1
   gp-hashicorp-vault:
   - apiVersion: v2
-    created: "2023-05-31T08:07:07.764420371Z"
+    created: "2023-05-31T08:27:45.952842284Z"
     dependencies:
     - name: vault
       repository: https://helm.releases.hashicorp.com
       version: 0.23.0
     description: A Helm chart for Kubernetes, extending the base HC Vault Helm Chart
-    digest: 8de75fa7d69410d516356b20f6b0487025d055dbfcd951c5166119a0ceaaf2ce
+    digest: 52b8750e1fdd97beacd91997e405b3e7cab7480334665612d8032f8767c0d9a6
     name: gp-hashicorp-vault
     type: application
     urls:
@@ -6053,7 +6062,7 @@ entries:
     version: 1.0.0
   gp-keycloak-instance:
   - apiVersion: v2
-    created: "2023-05-31T08:07:07.771860047Z"
+    created: "2023-05-31T08:27:45.959617184Z"
     dependencies:
     - condition: persistence.enabled
       name: postgresql
@@ -6061,7 +6070,7 @@ entries:
       version: ~12.2.0
     description: A Helm chart for deploying Keycloak on OpenShift using the Keycloak-X
       Operator
-    digest: 1b9fa798632e9e1bbbcb0376d5572ae1b9e5b83ca129e53c00db4ba9aa430f09
+    digest: 613120b1383acf07e9ea300daafad001c091e44c1144ad909dde8e06c69aaf6c
     name: gp-keycloak-instance
     type: application
     urls:
@@ -6384,9 +6393,9 @@ entries:
     version: 0.1.0
   gp-keycloak-operator:
   - apiVersion: v2
-    created: "2023-05-31T08:07:07.772054246Z"
+    created: "2023-05-31T08:27:45.959941989Z"
     description: A Helm chart for deploying the keycloak-x operator on OpenShift
-    digest: 6433462d54fbf330e575eefc9c86140812241c8d48d322f8754d1e77cbe4012a
+    digest: 2ca86d059cf2e8a764aca863a2b4f195b42c21358024490c126eb5e66180e3f1
     name: gp-keycloak-operator
     type: application
     urls:
@@ -6433,13 +6442,13 @@ entries:
   gp-kyverno:
   - apiVersion: v2
     appVersion: 1.9.1
-    created: "2023-05-31T08:07:07.781893815Z"
+    created: "2023-05-31T08:27:45.971327058Z"
     dependencies:
     - name: kyverno
       repository: https://kyverno.github.io/kyverno/
       version: 2.7.2
     description: A Helm chart for deploying kyverno on gepaplexx openshift clusters
-    digest: 884526ea89f52770e5a962705b64df0d14c5e792b0ad17e87ed10182e93bfcce
+    digest: bf6be64d18c0d2abf183e7762820d0664a897b0bc2106167b777aedb461ccd4e
     name: gp-kyverno
     type: application
     urls:
@@ -6585,9 +6594,9 @@ entries:
   gp-multena:
   - apiVersion: v2
     appVersion: 0.0.58
-    created: "2023-05-31T08:07:07.782294613Z"
+    created: "2023-05-31T08:27:45.971834866Z"
     description: A Helm chart for Multena
-    digest: becc579de5459c307aab6456fd0fa5eeefc11f9798507b28113d0ab4e46f14e5
+    digest: b259008b9526d255229cfe2ba60b5738cbac3ef44d34992911d4c817473be502
     name: gp-multena
     type: application
     urls:
@@ -6683,9 +6692,9 @@ entries:
   gp-ocp-internal-registry:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-31T08:07:07.782464613Z"
+    created: "2023-05-31T08:27:45.972050269Z"
     description: A Helm chart for Kubernetes
-    digest: cfbc51cef1e9d9a9e164bdafdef223d3b1ce82b0412c79f28314e05facb0d041
+    digest: 7bfc05c673939bb738ad2f41b68b670bdbec6ce4b3527c86e30984517d6ccc47
     name: gp-ocp-internal-registry
     type: application
     urls:
@@ -6735,9 +6744,9 @@ entries:
   gp-openshift-gitops:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-31T08:07:07.782725012Z"
+    created: "2023-05-31T08:27:45.972355274Z"
     description: A Helm chart for Kubernetes
-    digest: 8713547d60173ae10c47c11b8d28c7c1373fac35a6cac29758d411545ba228f2
+    digest: 1e82b3a9514218adae4b052a22ef4c9d08743961844d60317d6e61adfbe02e66
     name: gp-openshift-gitops
     type: application
     urls:
@@ -6859,9 +6868,9 @@ entries:
   gp-pipelines:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-05-31T08:07:07.782895412Z"
+    created: "2023-05-31T08:27:45.972565477Z"
     description: A Helm chart deploying various Tekton and PipelinesAsCode manifests
-    digest: 900d963e022e1b46d0f707137dd9943e031862d599ac9b322799e6f38a1545db
+    digest: 46685d0553f0c8bf3a8b7784d797a14d9c11c501e2459c2773503c45340c8ba5
     name: gp-pipelines
     type: application
     urls:
@@ -7726,4 +7735,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2023-05-31T08:08:07.802655744Z"
+generated: "2023-05-31T08:27:45.943431444Z"
