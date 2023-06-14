@@ -1008,10 +1008,10 @@ entries:
     version: 0.1.0
   gp-cicd-eventbus:
   - apiVersion: v2
-    created: "2023-06-14T10:31:41.50900262Z"
+    created: "2023-06-14T12:10:01.55300563Z"
     description: A helm chart for installing required roles and rolebindings and infrastructure
       such as an eventbus for bootstrapping of an cicd instance
-    digest: cb979cbb6b5c44cdfcc612c752ea75c3650fc3ac32f9ed037e42493940b74448
+    digest: 3cebcbddbe93affa94d7b292ac0103fd9ecf9aa98edfcc00c38e0c5d507d84f5
     name: gp-cicd-eventbus
     type: application
     urls:
@@ -1020,7 +1020,7 @@ entries:
   gp-cicd-nexus:
   - apiVersion: v2
     appVersion: 3.38.1
-    created: "2023-06-14T10:31:41.510944718Z"
+    created: "2023-06-14T12:10:01.555253434Z"
     dependencies:
     - alias: nexus
       name: nexus-repository-manager
@@ -1028,7 +1028,7 @@ entries:
       version: ~54.1.0
     description: A Helm chart for deploying Sonartype Nexus on OpenShift using the
       certified operator
-    digest: 0fa4c188ce256b0de43259aebf51bbfacab230011d3bb83695dba3b0f98f380c
+    digest: 6147513b4c01d876b9ff58244d350248f7d3ce274db5f4ea4069a35fd3962726
     name: gp-cicd-nexus
     type: application
     urls:
@@ -1197,13 +1197,13 @@ entries:
   gp-cicd-sonarqube:
   - apiVersion: v2
     appVersion: 9.4.0
-    created: "2023-06-14T10:31:41.521736311Z"
+    created: "2023-06-14T12:10:01.56483105Z"
     dependencies:
     - name: sonarqube
       repository: https://charts.bitnami.com/bitnami
       version: ~3.2.2
     description: A Helm chart for deploying SonarQube Nexus for static code analysis.
-    digest: 9141619b94c6ea42a3dff9ee8336edd7264281ec912d07f37c2afc90d0e0b653
+    digest: c0a0992122569859d2a2d3a42ffb8b8e257786360baf642d30284b110188bcbe
     name: gp-cicd-sonarqube
     type: application
     urls:
@@ -1435,7 +1435,7 @@ entries:
     version: 0.0.6
   gp-cicd-tools:
   - apiVersion: v2
-    created: "2023-06-14T10:31:41.5379417Z"
+    created: "2023-06-14T12:10:01.581390178Z"
     dependencies:
     - alias: argo_events
       condition: argo_events.enabled
@@ -1456,7 +1456,7 @@ entries:
       version: ~1.8.2
     description: A Helm chart for deploying argo infrastructure including workflow,
       rollout, events and an argocd instance
-    digest: 2293ebce94768d3a00896e92ce1564a3ec4a89c823ab60e724f460b694574fb3
+    digest: bace3155d224811a88c5e934e712ab7fb6cb43b6622a0a0f5e19c46d2b80ec5f
     name: gp-cicd-tools
     type: application
     urls:
@@ -8185,4 +8185,4 @@ entries:
     urls:
     - https://gepaplexx.github.io/gp-helm-charts/velero-2.23.3.tgz
     version: 2.23.3
-generated: "2023-06-14T12:09:24.920792414Z"
+generated: "2023-06-14T12:10:01.552371529Z"
